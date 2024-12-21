@@ -1,5 +1,6 @@
 import streamlit as st
 from openai import OpenAI
+import os
 from dotenv import load_dotenv
 
 # 加载 .env 文件
