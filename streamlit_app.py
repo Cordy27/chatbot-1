@@ -1,6 +1,14 @@
 import streamlit as st
 from openai import OpenAI
+from dotenv import load_dotenv
 
+# 加载 .env 文件
+load_dotenv()
+
+# 读取环境变量
+api_key = os.environ.get("OPENAI_API_KEY")
+base_url = os.environ.get("OPENAI_API_BASE")
+print(api_key)  # 输出你的 API 密钥
 # Show title and description.
 st.title("💬 Chatbot")
 st.write(
